@@ -1,0 +1,17 @@
+{
+  "name": "Valentine's Gift",
+  "short_name": "Valentine",
+  "display": "standalone",
+  "start_url": "index.html",
+  "theme_color": "#ff257e",
+  "background_color": "#ff257e",
+  "description": "Valentine's Day Gift",
+  "categories": ["media", "entertainment"],
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
