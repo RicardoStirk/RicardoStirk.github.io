@@ -4,26 +4,35 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <audio id="backgroundMusic" src="CHRISTINA PERRI - A THOUSAND YEARS (INSTRUMENTAL).mp3" loop>
+        <!-- Audio element -->
+        <audio id="backgroundMusic" src="CHRISTINA_PERRI_A_THOUSAND_YEARS.mp3" loop>
             Your browser does not support the audio element.
         </audio>
 
-        <script>
-            document.body.addEventListener("click", function () {
-                const audio = document.getElementById("backgroundMusic");
-                audio.play(); // Start the audio on any click
-            });
-        </script>
+        <!-- Instruction for the user -->
+        <h1 style="text-align: center;">Tap anywhere to start the music and experience!</h1>
 
+        <!-- Valentine's content -->
         <div class="heart"></div>
-        <h1>I Love You</h1>
-        <p1 style="text-align: center;">
+        <h2>I Love You</h2>
+        <p style="text-align: center;">
             Hi baby, I'm happy to see you here and so happy to know that you said yes...
-        </p1>
-
+        </p>
         <footer style="text-align: left;">Ruth 1:16-17</footer>
         <footer2 style="text-align: center;">
             "Don't urge me to leave you or to turn back from you. Where you go I will go..."
         </footer2>
+
+        <!-- JavaScript to play music -->
+        <script>
+            // Add a click event listener to play the audio
+            document.body.addEventListener("click", function () {
+                const audio = document.getElementById("backgroundMusic");
+
+                // Attempt to play the audio if it’s paused
+                if (audio.paused) {
+                    audio.play()
+                        
+        </script>
     </body>
 </html>
