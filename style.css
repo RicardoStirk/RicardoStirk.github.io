@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b1522;
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center the text */
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #f20044;
+    transform: rotate(-45deg);
+    animation: heart 0.6s linear infinite;
+}
+
+/* Keyframe animation for pulsing heart */
+@keyframes heart {
+    0% {
+        transform: rotate(-45deg) scale(1.1);
+    }
+    80% {
+        transform: rotate(-45deg) scale(1);
+    }
+    100% {
+        transform: rotate(-45deg) scale(0.9);
+    }
+}
+
+.heart:before,
+.heart:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #f20044;
+    border-radius: 50%;
+    box-shadow: 0 0 90px #f20044;
+}
+
+.heart:before {
+    left: 50px;
+    top: 0;
+}
+
+.heart:after {
+    left: 0;
+    top: -50%;
+}
+
+h1 {
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin-top: 30px; /* Adds space between the heart and the text */
+}
+
+p1 {
+    color: aliceblue;
+    color: aliceblue;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin-right: 43px; /* Adds space between the heart and the text */
+    margin-left: 43px;
+}
+
+footer{
+    color: aliceblue;
+    color: aliceblue;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin-top: 15;
+    margin-right: 43px; /* Adds space between the heart and the text */
+    margin-left: 43px;
+}
+
+footer2{
+    color: aliceblue;
+    color: aliceblue;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    margin-top: 15;
+    margin-right: 43px; /* Adds space between the heart and the text */
+    margin-left: 43px;
+}
