@@ -1,0 +1,80 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <body>
+        <Style>
+            body {
+        
+                background-color: black;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                flex-direction: column;
+                font-family: 'Times New Roman (serif)', cursive
+
+            }
+            div{
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            h1{
+                font-size: 50px;
+                text-align: center;
+                margin: 0;
+                color: white;
+                text-shadow: 2px 2px 5px white;
+                
+            }
+
+            #pwd{
+                text-align: center;
+                height:40px;
+                width: 450px;
+                font-size: 16px;     /* text size */
+                padding: 5px;        /* space inside box */
+                border: 2px solid white;  /* border color */
+                border-radius: 6px;  /* rounded corners */
+                background-color: black;  /* background color */
+                color: white;         /* text color */
+            }
+            
+
+        </Style>
+        <div>
+            <h1>PLEASE ENTER A PASSWORD</h1>
+        </div>
+
+        <!--Password Field-->
+        <div style ="text-align: center;">
+            <form onsubmit="return passwordCorrect">
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+             </form>
+        </div>
+        
+        <script>
+            function transfer(){
+                location.replace("Valentines.html")
+            }
+
+            //Checks if password is correct 
+            function passwordCorrect(){
+                let pwd = document.getElementById("pwd").value;
+
+                if (pwd !== "Mil0Rock$"){
+                    alert("Password is Incorrect try again");
+                    return false;
+                }
+
+                alert("Password Matches welcome Back My love <3");
+                passwordCorrect();
+                return true
+            }
+
+
+        </script>
+    
+    </body>
+</html>
