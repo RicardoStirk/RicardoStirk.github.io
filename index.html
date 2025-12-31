@@ -42,13 +42,13 @@
             
 
         </Style>
-        <div>
-            <h1>PLEASE ENTER A PASSWORD</h1>
-        </div>
+        
+        <h1>PLEASE ENTER A PASSWORD</h1>
+        
 
         <!--Password Field-->
         <div style ="text-align: center;">
-            <form onsubmit="return passwordCorrect">
+            <form onsubmit="return passwordCorrect()">
                 <label for="pwd">Password:</label><br>
                 <input type="password" id="pwd" name="pwd">
              </form>
@@ -69,7 +69,7 @@
                 }
 
                 alert("Password Matches welcome Back My love <3");
-                passwordCorrect();
+                transfer();
                 return true
             }
 
